@@ -43,3 +43,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'rails_12factor', group: :production
 
 gem 'devise'
+
+gem 'simple_form'
