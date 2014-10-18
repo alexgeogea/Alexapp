@@ -18,6 +18,20 @@
 	font-family: 'Bebas Neue';
 	src: url(fonts/'BebasNeue.otf');
 }
+@font-face {
+	font-family: 'Garamond';
+	src: url(fonts/'AGaramondPro-Regular.otf');
+}
+@font-face {
+	font-family: 'Garamond';
+	src: url(fonts/'AGaramondPro-Bold.otf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Garamond';
+	src: url(fonts/'AGaramondPro-Italic.otf');
+	font-style: italic;
+}
 
 body { 
 	background: #7185ed; /* Old browsers */
@@ -34,7 +48,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7185ed', end
 
 .navbar.navbar-inverse.navbar-fixed-top {
 	background: none; 
-	border: none;
+	border-bottom: 1px solid #35459e;
 	margin-top: 20px;
 }
 
@@ -54,6 +68,22 @@ a.navbar-link {
 	font-size: 18px;
 }
 
+#tagline {
+	font-family: 'Garamond';
+	font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+	line-height: 30px;
+	margin: 100px 40px;
+	text-align: center;
+}
+.image-1 {
+	width: 168px;
+	height: 194px;
+	background-image: url('../images/head-1.png');
+	margin: 10px 40px;
+	background-repeat: no-repeat;
+}
 
 footer {
 	padding-top: 60px;

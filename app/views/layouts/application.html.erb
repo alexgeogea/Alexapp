@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Railsgirls</title>
+  <title>Alex app</title>
   
   <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css">
   <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css">
@@ -53,7 +53,15 @@
 	</div>
 
 	<div class="container">
-		<%= yield %>
+		<div class="row">
+			<div class="col-md-6">
+				<p id="tagline">Share ideas with your friends, find collaborators and make your ideas become reality!
+				</p>
+				<div class="image-1"></div>
+			</div>
+			<div class="col-md-6">
+				<%= yield %>
+			</div>
 	</div>
 
 	<footer>
