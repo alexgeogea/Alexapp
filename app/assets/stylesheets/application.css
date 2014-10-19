@@ -68,26 +68,47 @@ a.navbar-link {
 	font-size: 18px;
 }
 
+a.navbar-link:hover {
+	color: #646465 !important;
+}
+
+/* Changed the background-color of the links from the scaffolds.css.css file */
+a:hover, a:visited {
+	text-decoration: none;
+	background-color: none;
+}
+
 #tagline {
 	font-family: 'Garamond';
 	font-weight: bold;
 	font-size: 30px;
 	color: #fff;
 	line-height: 30px;
-	margin: 100px 40px;
+	margin-top: 100px;
+	margin-right: 40px;
 	text-align: center;
 }
 .image-1 {
 	width: 168px;
 	height: 194px;
-	background-image: url('../images/head-1.png');
-	margin: 10px 40px;
+	background-image: url("head-1.png");
 	background-repeat: no-repeat;
+	margin-top: 15px;
+
 }
 
-footer {
-	padding-top: 60px;
+.image-2 {
+	width: 168px;
+	height: 194px;
+	background-image: url("head-2.png");
+	background-repeat: no-repeat;
+	margin-top: 15px;
 }
+
+.image-box {
+	margin-left: 80px;
+}
+
 
 table, td, th {
 	vertical-align: middle;

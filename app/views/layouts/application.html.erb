@@ -11,7 +11,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div id="wrap">
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -57,7 +57,10 @@
 			<div class="col-md-6">
 				<p id="tagline">Share ideas with your friends, find collaborators and make your ideas become reality!
 				</p>
-				<div class="image-1"></div>
+				<div class="image-box">
+					<div class="image-1 col-md-3"></div>
+					<div class="image-2 col-md-3"></div>
+				</div>
 			</div>
 			<div class="col-md-6">
 				<%= yield %>
@@ -66,11 +69,11 @@
 
 	<footer>
 		<div class="container">
-
+			
 		</div>
 	</footer>
 
 	<script src="//railsgirls.com/assets/bootstrap.js"></script>
-
+</div>
 </body>
 </html>
