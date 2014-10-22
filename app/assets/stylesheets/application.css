@@ -46,13 +46,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7185ed', end
 	padding-top: 100px;
 }
 
+#wrap {
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -60px;
+	padding: 0 0 0;
+}
 .navbar.navbar-inverse.navbar-fixed-top {
 	background: none; 
-	border-bottom: 1px solid #35459e;
 	margin-top: 20px;
+	border: 0;
 }
 
-.navbar-header {
+.navbar.navbar-inverse.navbar-fixed-top .container {
+	border-bottom: 1px solid #35459e;
 }
 
 a.navbar-brand, a.navbar-link {
@@ -126,7 +133,7 @@ a:hover, a:visited {
 	font-size: 30px
 }
 
-.custom-form-box #user_email, #user_password {
+.custom-form-box #user_name, #user_email, #user_password {
 	height: 40px;
 	width: 260px;
 	border: 1px solid #7d92f1;
@@ -157,6 +164,32 @@ a:hover, a:visited {
 
 .custom-form-box a:hover {
 	color: #35459e;
+}
+
+.content {
+	margin-bottom: 15px;
+}
+
+#footer {
+	margin-top: 20px;
+	height: 60px;
+}
+
+.about-me a, p{
+	font-family: 'Bebas Neue';
+	color: #fff;
+	font-size: 12px;
+	margin-left: 30px;
+}
+
+.about-me a:hover {
+	color: #646465;
+}
+
+.about-me {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #35459e;
 }
 
 table, td, th {

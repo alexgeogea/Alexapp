@@ -52,26 +52,32 @@
 		<% end %>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<p id="tagline">Share ideas with your friends, find collaborators and make your ideas become reality!
-				</p>
-				<div class="image-box">
-					<div class="image-1 col-md-3"></div>
-					<div class="image-2 col-md-3"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p id="tagline">Share ideas with your friends, find collaborators and make your ideas become reality!
+					</p>
+					<div class="image-box">
+						<div class="image-1 col-md-3"></div>
+						<div class="image-2 col-md-3"></div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<%= yield %>
+				</div>
+		</div>
+
+
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="about-me">
+					<a href="#">About me</a>
+					<p>2014 Alex Geogea</p>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<%= yield %>
-			</div>
-	</div>
-
-	<footer>
-		<div class="container">
-			
 		</div>
-	</footer>
+	</div>
 
 	<script src="//railsgirls.com/assets/bootstrap.js"></script>
 </div>
