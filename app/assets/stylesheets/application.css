@@ -16,20 +16,20 @@
 
 @font-face {
 	font-family: 'Bebas Neue';
-	src: url(fonts/'BebasNeue.otf');
+	src: url('BebasNeue.otf');
 }
 @font-face {
 	font-family: 'Garamond';
-	src: url(fonts/'AGaramondPro-Regular.otf');
+	src: url('AGaramondPro-Regular.otf');
 }
 @font-face {
 	font-family: 'Garamond';
-	src: url(fonts/'AGaramondPro-Bold.otf');
+	src: url('AGaramondPro-Bold.otf');
 	font-weight: bold;
 }
 @font-face {
 	font-family: 'Garamond';
-	src: url(fonts/'AGaramondPro-Italic.otf');
+	src: url('AGaramondPro-Italic.otf');
 	font-style: italic;
 }
 
