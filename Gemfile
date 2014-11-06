@@ -45,3 +45,5 @@ gem 'rails_12factor', group: :production
 gem 'devise'
 
 gem 'simple_form'
+
+gem 'protected_attributes'

@@ -55,12 +55,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<p id="tagline">Share ideas with your friends, find collaborators and make your ideas become reality!
-					</p>
-					<div class="image-box">
-						<div class="image-1 col-md-3"></div>
-						<div class="image-2 col-md-3"></div>
-					</div>
+						<p id="tagline">Share ideas with your friends, find collaborators and make your ideas become reality!
+						</p>
+						<div class="image-box">
+							<div class="image-1 col-md-3"></div>
+							<div class="image-2 col-md-3"></div>
+						</div>
 				</div>
 				<div class="col-md-6">
 					<%= yield %>
@@ -69,16 +69,14 @@
 
 
 	<div id="footer">
-		<div class="container">
 			<div class="row">
 				<div class="links-footer col-md-2">
-					<a href="#">About me</a>
+					<%= link_to 'About me', pages_info_path, :class => 'about-me' %>
 				</div>
 				<div class="copyright col-md-2 col-md-offset-8">
 					<p>2014 Alex Geogea</p>
 				</div>
 			</div>
-		</div>
 	</div>
 
 	<script src="//railsgirls.com/assets/bootstrap.js"></script>
