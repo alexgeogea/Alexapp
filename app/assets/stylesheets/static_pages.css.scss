@@ -1,3 +1,222 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('BebasNeue.otf');
+}
+@font-face {
+	font-family: 'Garamond';
+	src: url('AGaramondPro-Regular.otf');
+}
+@font-face {
+	font-family: 'Garamond';
+	src: url('AGaramondPro-Bold.otf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Garamond';
+	src: url('AGaramondPro-Italic.otf');
+	font-style: italic;
+}
+
+body { 
+	background: #7185ed; /* Old browsers */
+background: -moz-linear-gradient(top,  #7185ed 0%, #8fa6f6 50%, #7185ed 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7185ed), color-stop(50%,#8fa6f6), color-stop(100%,#7185ed)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7185ed 0%,#8fa6f6 50%,#7185ed 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #7185ed 0%,#8fa6f6 50%,#7185ed 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #7185ed 0%,#8fa6f6 50%,#7185ed 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #7185ed 0%,#8fa6f6 50%,#7185ed 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7185ed', endColorstr='#7185ed',GradientType=0 ); /* IE6-9 */
+
+	padding-top: 100px;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto -60px;
+	padding: 0 0 0;
+}
+.navbar.navbar-inverse.navbar-fixed-top {
+	background: none; 
+	margin-top: 20px;
+	border: 0;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top .container {
+	border-bottom: 1px solid #35459e;
+}
+
+p.navbar-text.pull-right {
+	color: #fff !important;
+	font-family: 'Garamond';
+}
+
+a.navbar-brand, a.navbar-link {
+	color: #fff !important;
+	font-family: 'Bebas Neue';
+}
+
+a.navbar-brand {
+	font-size: 48px;
+}
+
+a.navbar-link {
+	font-size: 18px;
+}
+
+a.navbar-link:hover {
+	color: #646465 !important;
+}
+
+/* Changed the background-color of the links from the scaffolds.css.css file */
+a:hover, a:visited {
+	text-decoration: none;
+	background-color: none;
+}
+
+#tagline {
+	font-family: 'Garamond';
+	font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+	line-height: 30px;
+	margin-top: 60px;
+	margin-right: 40px;
+	text-align: center;
+}
+.image-1 {
+	width: 168px;
+	height: 194px;
+	background-image: url("head-1.png");
+	background-repeat: no-repeat;
+	margin-top: 15px;
+
+}
+
+.image-2 {
+	width: 168px;
+	height: 194px;
+	background-image: url("head-2.png");
+	background-repeat: no-repeat;
+	margin-top: 15px;
+}
+
+.image-box {
+	margin-left: 80px;
+}
+
+/* Custom form styling */
+
+.custom-form-box {
+	background-color: #fff;
+	width: 405px;
+	height: 460px;
+	margin-top: 60px;
+	text-align: center;
+}
+
+.custom-form-box h2 {
+	padding-top: 30px;
+	font-family: 'Bebas Neue';
+	color: #646465;
+	font-size: 30px
+}
+
+.custom-form-box #user_name, #user_email, #user_password, #user_password_confirmation, #user_current_password {
+	height: 40px;
+	width: 260px;
+	border: 1px solid #7d92f1;
+	border-radius: 3px;
+	margin-top: 30px;
+	font-family: 'Bebas Neue';
+	font-size: 14px;
+	color: #646465;
+	padding-left: 20px;
+}
+
+.custom-form-box label {
+	display: none;
+}
+
+.form-actions input.btn {
+	width: 115px;
+	height: 40px;
+	background-color: #7d93f0;
+	text-align: center;
+	font-family: 'Bebas Neue';
+	font-size: 30px;
+	color: #fff;
+	margin-top: 30px;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+.custom-form-box a:hover {
+	color: #35459e;
+}
+
+.cancel-account {
+	margin-top: 20px;
+}
+
+.cancel-account h4 {
+	font-family: 'Bebas Neue';
+	color: #fff;
+}
+.cancel-account p, a {
+	font-family: 'Garamond';
+	color: #fff !important;
+	font-size: 14px;
+}
+
+.cancel-account a:hover {
+	color: #35459e !important;
+}
+
+.content {
+	margin-bottom: 15px;
+}
+
+p.help-block {
+	font-family: 'Garamond';
+	font-style: italic;
+	padding-top: 15px;
+}
+
+#footer {
+	margin-top: 20px;
+	height: 60px;
+}
+
+.links-footer .about-me, .copyright p{
+	font-family: 'Bebas Neue';
+	color: #fff;
+	font-size: 12px;
+}
+
+.links-footer .about-me:hover {
+	color: #646465;
+}
+
+.copyright p {
+	float: right;
+}
+
+#footer .row {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #35459e;
+}
+
+table, td, th {
+	vertical-align: middle;
+	border: none;
+}
+
+th {
+	border-bottom: 1px solid #ddd;
+}

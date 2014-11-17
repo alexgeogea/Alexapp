@@ -1,15 +1,13 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-
+  root :to => 'static_pages#home'
   get 'static_pages/about'
 
   get 'users/new'
 
   devise_for :users
   
-  get 'pages/info'
+  #root :to => redirect('/static_pages/home')
 
-  root :to => redirect('/ideas')
   resources :ideas
 
   resources :users
