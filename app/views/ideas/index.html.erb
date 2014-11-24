@@ -1,29 +1,30 @@
-<h1>Listing ideas</h1>
+<div class="container">
+  <div id="index-ideas">
+    <div class="row">
+      <div class="col-md-7">
+        <input type="text" name="new-idea" placeholder="Add new idea here:">
+        <%= link_to 'New Idea', new_idea_path %>
+      </div>
+    </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Picture</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="row">
+      <div class="col-md-7">
+        <% @ideas.each do |idea| %>
+          <div class="user-idea">
+            <h3><%= current_user.email %></h3>
+            <h4><%= idea.name %></h4>
+            <p class="idea-description"><%= idea.description %></p>
+            <p><%= idea.picture %></p>
+            <p class="idea-links">
+              <%= link_to "Show", idea %>
+              <%= link_to "Edit", edit_idea_path(idea) %>
+              <%= link_to "Delete", idea, method: :delete, data: {
+                confirm: "Are you sure?" } %>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 
-  <tbody>
-    <% @ideas.each do |idea| %>
-      <tr>
-        <td><%= idea.name %></td>
-        <td><%= idea.description %></td>
-        <td><%= idea.picture %></td>
-        <td><%= link_to 'Show', idea %></td>
-        <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-        <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
-
-<%= link_to 'New Idea', new_idea_path %>

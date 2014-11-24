@@ -1,3 +1,54 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+input {
+	background-color: #fff;
+	height: 50px;
+	width: 575px;
+	font-family: 'Bebas Neue';
+	color: #646465;
+	font-size: 18px;
+	padding-left: 30px;
+}
+
+.user-idea {
+	background-color: #fff;
+	padding-top: 10px;
+	padding-left: 30px;
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+
+.user-idea h3 {
+	font-family: 'Bebas Neue';
+	font-size: 24px;
+	color: #646465;
+}
+
+.user-idea h4 {
+	font-family: 'Garamond';
+	font-size: 18px;
+	font-weight: bold;
+	color: #646465;
+}
+
+.idea-description {
+	font-family: 'Garamond';
+	font-size: 16px;
+	color: #646465;
+}
+
+.idea-links a {
+	font-family: 'Garamond';
+	font-size: 16px;
+	font-style: italic; 
+	color: #646465 !important;
+}
+
+.idea-links a:hover {
+	color: #35459e !important;
+}
+
+.idea-links {
+	padding-left: 480px;
+}
